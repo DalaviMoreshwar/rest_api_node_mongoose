@@ -1,0 +1,27 @@
+GET http://localhost:3001/subscribers
+
+###
+GET http://localhost:3001/subscribers/5e31b79adf771f148c691214
+
+###
+POST http://localhost:3001/subscribers
+Content-Type:  application/json
+
+{
+    "name": "Akshay Vaidya",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+
+DELETE http://localhost:3001/subscribers/5e31b79adf771f148c691214
+
+###
+
+PATCH http://localhost:3001/subscribers/5e31b9297a0fe20eac8abd4f
+Content-Type: application/json
+
+{
+    "name": "Andrew O'conner",
+    "subscribedToChannel": "Node js REST API"
+}
